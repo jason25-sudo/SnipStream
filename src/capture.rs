@@ -46,6 +46,14 @@ pub fn stop_capture() {
     // TODO: implement proper stop signal and finalization
 }
 
+pub fn pause_capture() {
+    println!("[capture] pause (stub)");
+}
+
+pub fn resume_capture() {
+    println!("[capture] resume (stub)");
+}
+
 /// Capture a single screenshot and save it to `path`.
 pub fn save_screenshot(path: &str) {
     println!("[capture] saving screenshot to {path}");
@@ -102,5 +110,6 @@ pub fn save_screenshot_auto() {
     let path = dir.join(filename);
     if let Some(path_str) = path.to_str() {
         save_screenshot(path_str);
+        crate::editing::auto_crop();
     }
 }

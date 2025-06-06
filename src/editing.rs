@@ -19,3 +19,11 @@ pub fn generate_thumbnail() {
 pub fn auto_highlights() {
     println!("[editing] auto highlight detection (stub)");
 }
+
+pub fn overlay_text() {
+    println!("[editing] overlay text (stub)");
+}
+
+pub fn scene_transition() {
+    println!("[editing] scene transition (stub)");
+}
